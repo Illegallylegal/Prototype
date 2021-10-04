@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Wear</title>
+    <link rel="icon" href="images/TAB WEBSITE.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="main">
+        <div class="brand">
+        <ul>
+        <img src="images/SaltedExe.png" alt="Brand">
+        </ul>
+        <li>
+        <a href="#quotes"><img src="images/Arrow.png" alt="Arrow">  </a>
+    </li>
+    </div>
+    
+</section>
+<section class="secpage">
+        <div id="quotes">
+        <img src="images/Logo.png" alt="Logo">
+        <ul>
+        <a href=""><img src="images/Contact.png" alt=""></a>
+        <li>
+            <input type="search" class="srch" placeholder="  Type Something Dumbass">
+            <a href=""><button class="btn"><img src="images/Search.png"></button></a>
+        </li>
+    </ul>
+    </div>
+    <div class="coll">
+        <img src="images/AddImg.png" alt="cool imagery">
+    </div>
+        <div class="slideshow-container">
+            <div class="myslides">
+                <div class="teks">“Life is really simple, but we insist on making it complicated.” <br> -Confucious, 551 BCE.</div>
+            </div>
+            <div class="myslides">              
+                <div class="teks">“Make things as simple as possible but no simpler.” <br> -Albert Einstein, 1879.</div>
+            </div>
+            <div class="myslides">
+                <div class="teks">“My riches consist, not in the extent of my possessions, but in the fewness of my wants.” <br> -Joseph Brotherton, 1783.</div>
+            </div>
+            <div class="myslides">
+                <div class="teks">“Poverty is my pride.” <br> -Muhammed, 570.</div>
+            </div>
+            <div class="myslides">
+                <div class="teks">“Nothing is enough for the man to whom enough is too little.” <br> -Epicurus, 341 BCE.</div>
+            </div>    
+        </div>
+ 
+        <br>
+        <div class="lines">
+            <span class="line">-</span><span class="line">-</span> <span class="line">-</span> <span class="line">-</span><span class="line">-</span>
+        </div>
+      
+        <script>
+            var slideIndex = 0;
+            showslides();
+            
+            function showslides() {
+              var i;
+              var slides = document.getElementsByClassName("myslides");
+              var line = document.getElementsByClassName("line");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < line.length; i++) {
+                line[i].className = line[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              line[slideIndex-1].className += " active";
+              setTimeout(showslides, 10000); 
+            }
+        </script>
+            
+</section><div class="gradation"></div>
+
+<section class="thirdpage">
+    
+<center><h1>PICK YOUR POISON</center></h1>
+<div class="menu">
+        <div class="col">
+        <a href="images/b1.png" class="hero-btn1"><h3>About Us</h3></About></a></div>
+        <div class="col">
+        <a href="images/b2.png" class="hero-btn2"><h3>Product</h3></a></div>
+        <div class="col">
+        <a href="images/l6.png" class="hero-btn3"><h3>Upcoming</h3></a></div>
+    </div>
+</section><div class="gradation2"></div>
+<section class="contact">
+    <div class="about-us">
+        <center><h4>C O N T A C T &nbsp; U S</h4></center>
+        <div class="contact-logo">
+            &emsp;&emsp;
+                <div class="contact-col">
+                <a href=""><img src="images/Twitter.png" alt="TT"></a></div>
+                    <div class="batang">
+                    <img src="images/batang.png" alt="BATANG WINSTON">
+                    </div>
+                    &emsp;&emsp;
+                <div class="contact-col">
+                <a href=""><img src="images/Google.png" alt="GG"></a></div>
+                    <div class="batang">
+                    <img src="images/batang.png" alt="BATANG WINSTON">
+                    </div>
+                    &emsp;&emsp;&emsp;
+                <div class="contact-col1">
+                <a href=""><img src="images/Facebook.png" alt="GG" width="1px"></a></div>
+                &emsp;
+                    <div class="batang">
+                    <img src="images/batang.png" alt="BATANG WINSTON">
+                    </div>
+                    &emsp;&emsp;
+                <div class="contact-col">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><img src="images/Youtube.png" alt="YT"></a></div>
+                    <div class="batang">
+                    <img src="images/batang.png" alt="BATANG WINSTON">
+                    </div>
+                    &emsp;&emsp;
+                <div class="contact-col">
+                <a href=""><img src="images/Instagram.png" alt="IG"></a></div>
+        </div>
+        <center><h6>This Website is Created by Steve Regan & Winston Sebastian</h6></center>
+    </div>
+</section>  
+
+</body>
+</html>
